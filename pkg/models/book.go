@@ -1,4 +1,4 @@
-package main
+package models
 
 import (
 	"github.com/jinzhu/gorm"
@@ -9,7 +9,6 @@ var db *gorm.DB
 
 type Book struct {
 	gorm.Model
-	ID          int    `json:"id"`
 	Name        string `json:"name"`
 	Author      string `json:"author"`
 	Publication string `json:"publication"`
